@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+    --color-ft-primary-1: #f4f6f5;
+    --color-ft-primary-2: #c3c9cd;
+    --color-ft-primary-3: #6d7d62;
+    --color-ft-primary-4: #252b1f;
+
+}
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background-color: var();
+}

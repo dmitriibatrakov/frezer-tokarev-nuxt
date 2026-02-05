@@ -1,0 +1,27 @@
+{
+  "name": "Frezer-tokarev-Nuxt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "format": "prettier --write \"**/*.{vue,js,ts,json,css,scss,html,md}\"",
+    "format:check": "prettier --check \"**/*.{vue,js,ts,json,css,scss,html,md}\""
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.13.0",
+    "@nuxt/ui": "^4.4.0",
+    "nuxt": "^4.3.0",
+    "tailwindcss": "^4.1.18",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "3.8.1",
+    "typescript": "^5.9.3"
+  }
+}
