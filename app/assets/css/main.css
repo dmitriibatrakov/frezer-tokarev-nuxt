@@ -3,14 +3,19 @@
 @import "@nuxt/ui";
 
 @theme {
-    --color-ft-primary-1: #f4f6f5;
-    --color-ft-primary-2: #c3c9cd;
-    --color-ft-primary-3: #6d7d62;
-    --color-ft-primary-4: #252b1f;
+    --color-ft-primary-1: #e4eaea;
+    --color-ft-primary-2: #afafaf;
+    --color-ft-primary-3: #66605a;
+    --color-ft-primary-4: #383508;
+    --color-ft-primary-5: #141a13;
 
 }
 * {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    background-color: var();
+    cursor: default;
+}
+
+button {
+    cursor: pointer;
 }

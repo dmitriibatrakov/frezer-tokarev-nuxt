@@ -15,7 +15,7 @@ import FTIconSprite from '~/components/icons/FTIconSprite.vue';
     </template>
 
     <template #right>
-      <UButton color="neutral" variant="outline">
+      <UButton color="neutral" variant="outline" class="px-4 py-2">
         <FTIconSprite name="ix-pen" size="1.2rem"/>
         Заказать проект
       </UButton>

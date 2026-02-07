@@ -5,7 +5,9 @@
 <template>
   <UMain>
     <FTHero />
-    <FTMainSection />
+    <FTFeaturesSection />
+    <FTWorksSection />
+    <FTContactSection />
   </UMain>
 </template>
 

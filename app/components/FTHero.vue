@@ -23,7 +23,7 @@ const items = [
     }"
   >
     <template #body>
-      <UButton color="neutral" variant="outline">
+      <UButton color="neutral" variant="outline" class="px-4 py-2.5">
         <FTIconSprite name="ix-pen" size="1.2rem" />
         Заказать проект
       </UButton>
@@ -31,12 +31,12 @@ const items = [
 
     <template #bottom>
       <div class="flex justify-center">
-        <span class="border-b-3 px-7 text-ft-primary-2"> Frezer-Tokarev </span>
+        <span class="border-b-3 px-7 text-ft-primary-1"> Frezer-Tokarev </span>
       </div>
     </template>
 
     <template #default>
-      <div class="flex justify-end relative">
+      <div class="flex justify-end relative mask-y-from-80% mask-y-to-100%">
         <UCarousel
           :items="items"
           :ui="{

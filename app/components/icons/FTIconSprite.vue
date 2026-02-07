@@ -1,6 +1,7 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ name: string; size?: string }>(), {
+withDefaults(defineProps<{ name: string; size?: string; color?: string }>(), {
   size: '1.5rem',
+  color: 'currentColor'
 });
 </script>
 
@@ -14,5 +15,6 @@ withDefaults(defineProps<{ name: string; size?: string }>(), {
 .icon {
   width: v-bind(size);
   height: v-bind(size);
+  color: v-bind(color);
 }
 </style>
