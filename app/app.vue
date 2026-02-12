@@ -6,7 +6,8 @@ import FTIconPack from './components/icons/FTIconPack.vue';
 <template>
   <FTIconPack />
   <UApp>
-    <NuxtLayout />
-    <NuxtPage />
+    <NuxtLayout>     
+      <NuxtPage /> 
+    </NuxtLayout>
   </UApp>
 </template>

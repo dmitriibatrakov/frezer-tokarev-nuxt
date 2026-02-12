@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import FTIconSprite from '~/components/icons/FTIconSprite.vue';
 const items = [
   'Токарные работы',
   'Фрезерные работы',
@@ -18,15 +17,14 @@ const items = [
     orientation="horizontal"
     :ui="{
       root: 'bg-[linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.5)),url(/lathe-1.jpg)] bg-center bg-no-repeat bg-cover',
-      description: 'text-ft-primary-2',
-      title: 'text-ft-primary-1',
+      description: 'text-ft-primary-2 text-sm sm:text-lg',
+      title: 'text-ft-primary-1 text-4xl sm:text-5xl md:text-7xl',
     }"
   >
     <template #body>
-      <UButton color="neutral" variant="outline" class="px-4 py-2.5">
-        <FTIconSprite name="ix-pen" size="1.2rem" />
+      <FTModalSection>
         Заказать проект
-      </UButton>
+      </FTModalSection>
     </template>
 
     <template #bottom>
@@ -40,8 +38,9 @@ const items = [
         <UCarousel
           :items="items"
           :ui="{
+            root: 'hidden lg:block',
             item: 'flex flex-col gap-4 text-ft-primary-2 text-2xl',
-            container: 'h-44',
+            container: 'h-12 lg:h-44',
           }"
           orientation="vertical"
           loop

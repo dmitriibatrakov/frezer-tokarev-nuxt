@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import FTIconSprite from '~/components/icons/FTIconSprite.vue';
+const functions = useFunctions();
 </script>
 
 <template>
@@ -9,14 +10,14 @@ import FTIconSprite from '~/components/icons/FTIconSprite.vue';
     получения дополнительной информации или партнерства. Мы здесь что бы помочь вам!"
     orientation="horizontal"
     :ui="{
-      title: 'flex font-normal text-ft-primary-5',
+      title: 'font-normal text-ft-primary-5',
       description: 'text-ft-primary-4 md: text-left',
       footer: 'flex gap-2',
-      container: 'lg:py-18'
+      container: 'lg:py-18',
     }"
   >
     <template #default>
-      <div class="relative overflow-hidden border-2 border-ft-primary-2 rounded-lg" >
+      <div class="relative overflow-hidden border-2 border-ft-primary-2 rounded-lg">
         <a
           href="https://yandex.ru/maps/47/nizhny-novgorod/?utm_medium=mapframe&utm_source=maps"
           style="color: #eee; font-size: 12px; position: absolute; top: 0px"
@@ -38,17 +39,31 @@ import FTIconSprite from '~/components/icons/FTIconSprite.vue';
     </template>
 
     <template #footer>
-      <UButton color="neutral" variant="outline" class="px-4 py-2.5">
-        <FTIconSprite name="ix-pen" size="1.2rem" />
-        Заказать проект
-      </UButton>
-      <div>
-        <p>или</p>
+      <div class="flex justify-center gap-4 pt-2 w-full">
+        <UButton
+          color="neutral"
+          variant="outline"
+          class="px-2 py-2 text-sm"
+          title="Почта будет скопирована в буфер"
+          @click="functions.mailToBuffer('mail@frezer-tokarev.ru')"
+        >
+          <FTIconSprite name="email" size="1.4rem" />
+        </UButton>
+        <FTModalSection> 
+          Заполнить форму 
+        </FTModalSection>
+
+        <UButton
+          title="Ссылка на Телеграм"
+          variant="outline"
+          color="neutral"
+          class="px-2 py-2 text-sm text-white bg-ft-telegram hover:bg-white hover:text-ft-telegram"
+          to="https://t.me/evgenii_batrakov"
+          target="_blank"
+        >
+          <FTIconSprite name="telegram" size="1.4rem" />
+        </UButton>
       </div>
-      <UButton color="neutral" variant="outline" class="px-4 py-2.5">
-        <FTIconSprite name="telegram" size="1.2rem" />
-        Написать
-      </UButton>
     </template>
   </UPageSection>
 </template>
